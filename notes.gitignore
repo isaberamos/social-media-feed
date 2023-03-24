@@ -1,0 +1,9 @@
+# Post
+
+* Na linha 26 referente a interface PostProps e a função Post:
+    - É necessário informar qual é o tipo do objeto inteiro, por isso usa-se o PostProps, em caso de usar a função Post com um parâmetro do tipo objeto -> Post ({author, published_at, content}: PostProps)
+
+# Comment
+
+* Na linha 45 referente ao elemento <footer>
+    - Se não passar uma função no onClick, o React entende que deve ser executada uma função, e aí entrará em loop infinito

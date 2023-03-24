@@ -1,0 +1,26 @@
+.wrapper {
+    width: 100%;
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem; /* rem é a unidade relativa referente ao tamanho da fonte pagina, por isso é mais interessante usar rem */
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /* fr é quantidade de colunas */
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 16 -> 100%
+14 -> x
+= 87,5%
+*/
